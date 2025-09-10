@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SheCodes</title>
+  <style>
+    /* Page baseline */
+    :root{
+      --page-padding: 48px;
+      --accent-gray: #bfbfbf;
+    }
+
+    body{
+      font-family: Georgia, "Times New Roman", serif;
+      margin: 0;
+      padding: var(--page-padding);
+      color: #111;
+    }
+
+    /* Large brand heading */
+    .brand{
+      font-size: 72px;            /* big like the screenshot */
+      line-height: 0.85;
+      margin: 0 0 18px 0;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    /* Container for the list (keeps it aligned under the heading) */
+    .menu-wrap{
+      display: inline-block;     /* shrinkwrap to content so spacing matches screenshot */
+      margin-top: 12px;
+      margin-left: 12px;         /* small left offset from brand */
+    }
+
+    ul.menu{
+      margin: 0;
+      padding-left: 28px;        /* visible bullet indentation */
+      font-size: 26px;          /* list text size */
+    }
+
+    hr.styled{
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--accent-gray), transparent);
+      margin: 48px 0;
+      width: 88%;
+      max-width: 980px;
+    }
+
+    h2.more-info{
+      font-size: 36px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    /* Make it look fine on small screens */
+    @media (max-width: 480px){
+      .brand { font-size: 44px; }
+      ul.menu { font-size: 20px; }
+      h2.more-info { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">SheCodes</div>
+
+    <div class="menu-wrap">
+      <ul class="menu">
+        <li>Codes</li>
+        <li>Course</li>
+        <li>Stories</li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <hr class="styled" />
+
+    <h2 class="more-info">More Info</h2>
+  </main>
+</body>
+</html>
